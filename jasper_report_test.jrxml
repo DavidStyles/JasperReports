@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="jasper_report_test" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="e0301291-ed71-442a-ae08-c060b0cbfd33">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT NameFirst, NameLast
+FROM tblCustomer
+WHERE ID = 7]]>
+	</queryString>
+	<field name="NameFirst" class="java.lang.String"/>
+	<field name="NameLast" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="515" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="3acb35f5-074a-4450-a070-dd1a29c7f4f0" x="18" y="238" width="12" height="17"/>
+				<textElement/>
+				<text><![CDATA[7.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="25ab1181-92f7-4861-8737-cb2493f5a9be" x="30" y="119" width="524" height="17"/>
+				<textElement/>
+				<text><![CDATA[Have you added any W-2 employees over the year which requires a Worker’s Compensation insurance policy?]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="25430794-899a-466c-8803-ad6b2913525e" x="18" y="221" width="12" height="17"/>
+				<textElement/>
+				<text><![CDATA[6.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="5ecddcc0-5dad-4625-ba7d-2597cc9bf853" x="18" y="136" width="12" height="17"/>
+				<textElement/>
+				<text><![CDATA[3.]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="ce457cda-0805-43d6-a17f-6b3cb7e145be" x="10" y="54" width="544" height="31"/>
+				<textElement markup="none"/>
+				<textFieldExpression><![CDATA["I hope all is well. We are approaching your liability and property insurance renewal for your CrossFit box. Please take a few minutes out of your day to complete the following questions via email."]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="cb9ab80a-96ed-4478-916a-d5a9f9dfdb5b" x="18" y="181" width="12" height="17"/>
+				<textElement/>
+				<text><![CDATA[5.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="b552f962-3633-4cac-b062-c1a73888de2f" x="10" y="415" width="544" height="28"/>
+				<textElement/>
+				<text><![CDATA[If you have opened another affiliate or closed your box please let us know immediately so we can make the appropriate updates.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="cb810223-a5ec-495d-8fcb-77f2fd27dd2b" x="30" y="153" width="524" height="28"/>
+				<textElement/>
+				<text><![CDATA[Do you schedule special events or competitions either within or outside your Box where you charge for participation or have more than 50 entrants?]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="1f3f3b71-ecc3-44d1-90bf-2dae74519996" x="30" y="102" width="524" height="17"/>
+				<textElement/>
+				<text><![CDATA[What are your expected annual gross revenues this year?]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="ef08e9d7-356a-4118-b341-34d6e7f1f284" x="10" y="10" width="235" height="20"/>
+				<textElement markup="none"/>
+				<textFieldExpression><![CDATA["Hi " + $F{NameFirst}+ ","]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="81897272-ee26-43de-8671-d0bac994cf20" x="30" y="136" width="524" height="17"/>
+				<textElement/>
+				<text><![CDATA[How many total current members/clients do you currently have?]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="cdcee4e0-299d-40b4-81e8-dc84bfd2eeed" x="10" y="446" width="544" height="28"/>
+				<textElement/>
+				<text><![CDATA[Should you have any questions regarding this email, your current policy, or the renewal process please do not hesitate to contact us.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="d8df634d-771c-4881-b4b3-a6b2d1429342" x="18" y="153" width="12" height="17"/>
+				<textElement/>
+				<text><![CDATA[4.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="9f8cdea2-d32e-4c93-be10-3220421a8251" x="30" y="221" width="524" height="17"/>
+				<textElement/>
+				<text><![CDATA[Have you added, changed, or deleted locations recently? If so, please provide the new address.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="7bfb3e1b-045c-4da2-b38a-d8a49f14dfce" x="30" y="238" width="524" height="64"/>
+				<textElement/>
+				<text><![CDATA[Have you added new services which we do not know about, including but not limited to: yoga classes, massage services, self defense instruction, selling products unrelated to CrossFit, parkour training, mixed martial arts?
+	a. If yes, how many members/clients are doing this service currently?
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="996792ac-4a7f-41ad-99c2-cf617c6cf2eb" x="18" y="119" width="12" height="17"/>
+				<textElement/>
+				<text><![CDATA[2.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="9541fe5c-50dc-41d2-8c48-85e959372b13" x="10" y="387" width="544" height="27"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Your renewal policy will contain changes including but not limited to; A Special Events Limitation Endorsement. Please read your renewal quote carefully.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="45724571-d24c-4dc2-bd9e-d4ea0b6b99bf" x="30" y="181" width="524" height="40"/>
+				<textElement/>
+				<text><![CDATA[What is the cost to replace all of your business property, including: Supplies, equipment, inventory, contents, signage and any items that you have installed or altered at the premises at your expense (flooring, lighting, or any other improvements)? ]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" pattern="MMMMM dd, yyyy">
+				<reportElement uuid="97deec1d-eef1-4f5a-9d3a-c1048c6ce8a1" x="10" y="317" width="544" height="27"/>
+				<textElement markup="none">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["I hope all is well. We are approaching your liability and property insurance renewal for your CrossFit box,. Please take a few minutes out of your day to complete the following questions via email."]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="b49e6e19-09e1-4b9f-895d-d079ee9b5737" x="10" y="344" width="544" height="43"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Also, this email is a friendly reminder that your last installment for your investment in the CFRRG, also known as the CrossFit RRG capital contribution, is due along with your insurance premiums this year. The second installment is $650.00 as noted in last years quote.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="46683774-d547-4772-8274-316374f6f4b7" x="18" y="102" width="12" height="17"/>
+				<textElement/>
+				<text><![CDATA[1.]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>
